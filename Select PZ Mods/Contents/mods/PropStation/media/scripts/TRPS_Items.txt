@@ -1,0 +1,18 @@
+module TRPack
+{
+	imports
+	{
+		Base,
+	}
+	
+	/********************PropStation*************************/
+	item PropStation
+	{
+		Type				= Normal,
+		DisplayName			= Propane Refill Station,
+        ScaleWorldIcon 		= 1.0,
+		Icon				= TRPropStation,
+		Weight 				= 5,
+	}
+
+}

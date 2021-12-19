@@ -1,0 +1,5 @@
+ContextMenu_RU = {
+	ContextMenu_PropStation			= "Газовая заправка",
+	ContextMenu_RefillPropaneTank 	= "Заправить газовый баллон",
+	ContextMenu_AddGas				= "Наполняем",
+}

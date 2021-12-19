@@ -1,0 +1,6 @@
+name=TiRekS Propane Upgraded
+id=PropStation
+description=TiRekS Propane Station Mod
+poster=poster.png
+tiledef=trstation 7402
+pack=trstation
