@@ -1,0 +1,206 @@
+module Base
+{
+
+	item MyCanteen
+    {
+       	Weight    			= 1,
+		CanStoreWater		= TRUE,
+       	Type    			= Normal,
+		DisplayName     	= Canteen,
+		ReplaceOnUseOn		= WaterSource-MyCanteenfull,
+		Icon 				= MyCanteen,
+		RainFactor 			= 1,
+		Tooltip 			= Tooltip_item_RainFromGround,
+    }
+
+	item MyCanteenfull
+    {
+		IsWaterSource		= TRUE,
+		Weight				= 2,
+		CanStoreWater		= TRUE,
+		Type				= Drainable,
+		UseWhileEquipped	= FALSE,
+		IsCookable			= TRUE,
+		UseDelta			= 0.07,
+		DisplayName			= Canteen with Water,
+		ReplaceOnDeplete	= MyCanteen,
+		ReplaceOnUseOn		= WaterSource-MyCanteenfull,
+		Icon				= MyCanteenfull,
+		RainFactor 			= 1,
+		Tooltip 			= Tooltip_item_RainFromGround,
+    }
+
+	item MyStrappedcanteen
+    {
+		Weight    			= 1,
+		CanStoreWater		= TRUE,
+		Type    			= Normal,
+		DisplayName         = Strapped Canteens,
+		ReplaceOnUseOn		= WaterSource-MyStrappedcanteenfull,
+		Icon 				= MyStrappedcanteen,
+		RainFactor 			= 1,
+		Tooltip 			= Tooltip_item_RainFromGround,
+    }
+
+	item MyStrappedcanteenfull
+    {
+		IsWaterSource		= TRUE,
+		Weight				= 2,
+		CanStoreWater		= TRUE,
+		Type				= Drainable,
+		UseWhileEquipped	= FALSE,
+		IsCookable			= TRUE,
+		UseDelta			= 0.035,
+		DisplayName			= Strapped Canteens with Water,
+		ReplaceOnDeplete	= MyStrappedcanteen,
+		ReplaceOnUseOn		= WaterSource-MyStrappedcanteenfull,
+		Icon				= MyStrappedcanteen,
+		RainFactor 			= 1,
+		Tooltip 			= Tooltip_item_RainFromGround,
+    }
+	
+
+	item MyGarbagebagbox
+	{
+		Weight				= 0.8,
+		Type				= Drainable,
+		UseDelta 			= 0.05,
+		DisplayName			= Box of Garbage Bags,
+		ReplaceOnDeplete	= MyGarbagebagboxempty,
+		Icon				= MyGarbagebagbox,
+	}
+
+	recipe Take Garbage Bag From Box
+    {
+		MyGarbagebagbox,
+		
+		Result:Garbagebag=1,
+		Time:10,
+    }
+	
+	recipe Put Garbage Bags In Box
+	{
+		destroy Garbagebag=20,
+		
+		Result:MyGarbagebagbox,
+		Time:30,
+	}
+	
+	recipe Attatch Canteens
+    {
+    	MyCanteen=2,
+		Belt2/Sling,
+    	Result:MyStrappedcanteen,
+    	Time:30,
+		Category:Health,
+    }
+	
+	recipe Reclaim Thread
+	{
+		Sheet=1,
+
+		Result:Thread=1,
+		Sound:PZ_ClothesRipping,
+		Time:300.0,
+		Category:Survivalist,
+	}
+	
+	recipe Reclaim Thread
+	{
+		RippedSheets=2,
+
+		Result:Thread=1,
+		Sound:PZ_ClothesRipping,
+		Time:300.0,
+		Category:Survivalist,
+	}
+
+	recipe Twist Twine
+	{
+		Thread=4,
+
+		Result:Twine=1,
+		Time:240.0,
+		Category:Survivalist,
+	}
+
+	recipe Make Rope
+	{
+		Twine=6,
+
+		Result:Rope,
+		Time:240.0,
+		Category:Survivalist,
+	}
+
+	recipe Make Wood Glue
+	{
+		Plank,
+		keep Saw,
+		keep Hammer,
+		Charcoal,
+		keep Lighter/Matches,
+		Flour,
+		Water=3,
+		Vinegar=1,
+		
+		CanBeDoneFromFloor:true,
+		Result:Woodglue,
+		NeedToBeLearn:false,
+		Time:300,
+		Category:Survivalist,
+	}
+
+	recipe Make Super Glue
+	{
+		Plank,
+		keep Saw,
+		keep Hammer,
+		Flour,
+		keep Lighter/Matches,
+		Water=2,
+		Glue=1,
+		Vinegar=2,
+		
+		CanBeDoneFromFloor:true,
+		Result:Superglue,
+		NeedToBeLearn:false,
+		Time:300,
+		Category:Survivalist,
+	}
+
+	recipe Make Scrap Metal
+	{
+		keep KitchenKnife/HuntingKnife/Saw,
+		TinCanEmpty=2,
+
+		CanBeDoneFromFloor:true,
+		Result:ScrapMetal,
+		Time:180.0,
+		Category:Survivalist,
+	}
+
+	recipe Break Shovel Into Trowel
+	{
+		Shovel,
+		keep Hammer,
+
+		Result:HandShovel,
+		Sound:PZ_Hammer,
+		Time:120.0,
+		Category:Survivalist,
+	}
+
+	recipe Make Sack
+	{
+		Sheet,
+		keep Needle/SutureNeedle/Nails,
+		Thread=2,
+
+		Result:EmptySandbag,
+		Sound:PZ_ClothesRipping,
+		Time:300.0,
+		Category:Survivalist,
+	}
+
+}

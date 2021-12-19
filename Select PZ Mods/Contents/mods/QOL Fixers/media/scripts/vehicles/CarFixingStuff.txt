@@ -1,0 +1,244 @@
+module Base
+{
+
+	item Superglue
+	{
+			Type				= Drainable,
+			UseDelta			= 0.2,
+			UseWhileEquipped	= FALSE,
+			DisplayName			= Super Glue,
+			Icon				= Superglue,
+			Weight				= 0.1,
+	}
+
+	item Rubbercement
+    {
+        	Type	            = Drainable,
+        	UseDelta	        = 0.2,
+        	UseWhileEquipped	= FALSE,
+        	DisplayName			= Rubber Cement,
+        	Icon				= Rubbercement,
+        	Weight				= 0.1,
+    }
+
+	/*********************** Hood Repair. */	
+
+	fixing Fix Hood
+	{
+		Require : EngineDoor1;EngineDoor2;EngineDoor3;EngineDoor8,
+		ConditionModifier : 0.4,
+
+		Fixer : DuctTape=2; Mechanics=1,
+		Fixer : Glue=2; Mechanics=1,
+	}
+
+	/*********************** Trunk Lid Repair. */	
+	
+	fixing Fix Trunk Lid
+	{
+		Require : TrunkDoor1;TrunkDoor2;TrunkDoor3;TrunkDoor8,
+		ConditionModifier : 0.4,
+
+		Fixer : DuctTape=2; Mechanics=1,
+		Fixer : Glue=2; Mechanics=1,
+	}
+	
+	/*********************** Brakes Repair. */	
+	
+	fixing Fix Brake Welding
+	{
+		Require : OldBrake1;OldBrake2;OldBrake3;NormalBrake1;NormalBrake2;NormalBrake3;ModernBrake1;ModernBrake2;ModernBrake3;OldBrake8;NormalBrake8;ModernBrake8,
+		GlobalItem : BlowTorch=5,
+		ConditionModifier : 0.5,
+
+		Fixer : SmallSheetMetal; MetalWelding=3; Mechanics=3,
+	}
+
+	fixing Fix Brake Welding
+	{
+		Require : OldBrake1;OldBrake2;OldBrake3;NormalBrake1;NormalBrake2;NormalBrake3;ModernBrake1;ModernBrake2;ModernBrake3;OldBrake8;NormalBrake8;ModernBrake8,
+		GlobalItem : BlowTorch=5,
+		ConditionModifier : 1.2,
+
+		Fixer : SheetMetal; MetalWelding=3; Mechanics=3,
+	}
+
+	/*********************** Muffler Repair. */	
+	
+	fixing Fix Muffler Welding
+	{
+		Require : OldCarMuffler1;OldCarMuffler2;OldCarMuffler3;NormalCarMuffler1;NormalCarMuffler2;NormalCarMuffler3;ModernCarMuffler1;ModernCarMuffler2;ModernCarMuffler3;OldCarMuffler8;NormalCarMuffler8;ModernCarMuffler8,
+		GlobalItem : BlowTorch=5,
+		ConditionModifier : 0.5,
+
+		Fixer : SmallSheetMetal; MetalWelding=3; Mechanics=3,
+	}
+	
+	fixing Fix Muffler Welding
+	{
+		Require : OldCarMuffler1;OldCarMuffler2;OldCarMuffler3;NormalCarMuffler1;NormalCarMuffler2;NormalCarMuffler3;ModernCarMuffler1;ModernCarMuffler2;ModernCarMuffler3;OldCarMuffler8;NormalCarMuffler8;ModernCarMuffler8,
+		GlobalItem : BlowTorch=5,
+		ConditionModifier : 1.2,
+
+		Fixer : SheetMetal=2; MetalWelding=3; Mechanics=3,
+	}
+
+	/*********************** Windshield Repair. */	
+
+	fixing Fix Windshield
+	{
+		Require : Windshield1;Windshield2;Windshield3;RearWindshield1;RearWindshield2;RearWindshield3;FrontWindow1;FrontWindow2;FrontWindow3;RearWindow1;RearWindow2;RearWindow3;FrontWindow8;Windshield8;RearWindshield8;RearWindow8,
+		ConditionModifier : 0.5,
+
+		Fixer : Glue=2; Mechanics=2,
+	}
+
+	/*********************** Sniffing glue since a young age, you do the best Windshield Repair. */
+
+	fixing Fix Windshield Advanced
+	{
+		Require : Windshield1;Windshield2;Windshield3;RearWindshield1;RearWindshield2;RearWindshield3;FrontWindow1;FrontWindow2;FrontWindow3;RearWindow1;RearWindow2;RearWindow3;FrontWindow8;Windshield8;RearWindshield8;RearWindow8,
+		ConditionModifier : 1.2,
+
+		Fixer : Superglue=1; Mechanics=3,
+		Fixer : Rubbercement=2; Mechanics=3,
+	}
+	
+	/*********************** Tires Repair. ***********************/	
+
+	fixing Fix Tire
+	{
+		Require : OldTire1;OldTire2;OldTire3;NormalTire1;NormalTire2;NormalTire3;ModernTire1;ModernTire2;ModernTire3;OldTire8;NormalTire8;ModernTire8,
+		ConditionModifier : 0.5,
+
+		Fixer : Glue=2; Mechanics=1,
+	}
+
+	fixing Fix Tire Advanced
+	{
+		Require : OldTire1;OldTire2;OldTire3;NormalTire1;NormalTire2;NormalTire3;ModernTire1;ModernTire2;ModernTire3;OldTire8;NormalTire8;ModernTire8,
+		ConditionModifier : 1.2,
+
+		Fixer : Superglue=1; Mechanics=3,
+		Fixer : Rubbercement=2; Mechanics=3,
+	}
+
+	/*********************** Suspension Repair. ***********************/	
+
+	fixing Fix Suspension Welding
+	{
+		Require : NormalSuspension1;NormalSuspension2;NormalSuspension3;ModernSuspension1;ModernSuspension2;ModernSuspension3;NormalSuspension8;ModernSuspension8,
+		GlobalItem : BlowTorch=5,
+		ConditionModifier : 0.7,
+
+		Fixer : SmallSheetMetal=2; MetalWelding=3; Mechanics=3,
+	}
+	
+	fixing Fix Suspension Welding
+	{
+		Require : NormalSuspension1;NormalSuspension2;NormalSuspension3;ModernSuspension1;ModernSuspension2;ModernSuspension3;NormalSuspension8;ModernSuspension8,
+		GlobalItem : BlowTorch=5,
+		ConditionModifier : 1.2,
+
+		Fixer : SheetMetal=2; MetalWelding=3; Mechanics=3,
+	}
+
+	/*********************** Double Door Repair. ***********************/	
+
+	fixing Fix Double Door Welding
+	{
+		Require : RearCarDoorDouble1;RearCarDoorDouble2;RearCarDoorDouble3;RearCarDoorDouble8,
+		GlobalItem : BlowTorch=5,
+		ConditionModifier : 0.75,
+
+		Fixer : SmallSheetMetal=2; MetalWelding=3; Mechanics=3,
+	}
+
+	fixing Fix Double Door Welding
+	{
+		Require : RearCarDoorDouble1;RearCarDoorDouble2;RearCarDoorDouble3;RearCarDoorDouble8,
+		GlobalItem : BlowTorch=5,
+		ConditionModifier : 1.2,
+
+		Fixer : SheetMetal=2; MetalWelding=3; Mechanics=3,
+	}
+
+	/*********************** Car Seat Repair. ***********************/	
+
+	fixing Fix Car Seat Advanced
+	{
+		Require : NormalCarSeat1;BigCarSeat1;SportCarSeat1;NormalCarSeat2;BigCarSeat2;SportCarSeat2;NormalCarSeat3;BigCarSeat3;SportCarSeat3;NormalCarSeat8;BigCarSeat8;SportCarSeat8,
+		ConditionModifier : 1.2,
+
+		Fixer : Superglue=2; Mechanics=3,
+		Fixer : Rubbercement=2,
+	}
+
+	fixing Fix Glove Box Welding
+	{
+		Require : GloveBox1;GloveBox2;GloveBox3,
+		GlobalItem : BlowTorch=5,
+		ConditionModifier : 10.0,
+
+		Fixer : SmallSheetMetal=1; MetalWelding=1;Mechanics=1,
+	}
+
+	/*********************** When you are just too good! Make Spare Parts ***********************/	
+
+	recipe Make Spare Engine Parts
+	{
+		SkillRequired:MetalWelding=4,
+		BlowTorch=5,
+		keep WeldingMask,
+		ScrapMetal=4,
+		ElectronicsScrap=2,
+		WeldingRods=2,
+
+		Result:EngineParts,
+		Category:Welding,
+		Time:500.0,
+	}
+	
+	recipe Make Spare Engine Parts
+	{
+		SkillRequired:MetalWelding=4,
+		BlowTorch=5,
+		keep WeldingMask,
+		SheetMetal=1,
+		ElectronicsScrap=2,
+		WeldingRods=2,
+
+		Result:EngineParts,
+		Category:Welding,
+		Time:500.0,
+	}
+
+	recipe Make Spare Engine Parts
+	{
+		SkillRequired:MetalWelding=4,
+		BlowTorch=5,
+		keep WeldingMask,
+		SmallSheetMetal=2,
+		ElectronicsScrap=2,
+		WeldingRods=2,
+
+		Result:EngineParts,
+		Category:Welding,
+		Time:500.0,
+	}
+	
+	recipe Make Spare Engine Parts
+	{
+		SkillRequired:MetalWelding=4,
+		BlowTorch=5,
+		keep WeldingMask,
+		MetalBar=2,
+		ElectronicsScrap=2,
+		WeldingRods=2,
+		
+		Result:EngineParts,
+		Category:Welding,
+		Time:500.0,
+	}
+
+}

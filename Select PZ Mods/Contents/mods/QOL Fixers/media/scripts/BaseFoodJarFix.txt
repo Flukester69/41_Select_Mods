@@ -1,0 +1,883 @@
+module Base
+{
+
+	item DozenJarsBox
+	{
+		Weight				= 3.0,
+		Type				= Normal,
+		DisplayName			= 12x Jars Box,
+		Icon				= DozenJarsBox,
+	}
+
+	item CannedTomato
+	{
+		Type				= Food,
+		DisplayName			= Jar of Tomatoes,
+		Icon				= JarBrown,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodTomatoes_Ground,
+	}
+
+	item CannedCarrots
+	{
+		Type				= Food,
+		DisplayName			= Jar of Carrots,
+		Icon				= JarBrown,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodCarrots_Ground,
+	}
+
+	item CannedPotato
+	{
+		Type				= Food,
+		DisplayName			= Jar of Potatoes,
+		Icon				= JarWhite,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodPotatoes_Ground,
+	}
+
+	item CannedEggplant
+	{
+		Type				= Food,
+		DisplayName			= Jar of Eggplants,
+		Icon				= JamPurple,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodEggplants_Ground,
+	}
+
+	item CannedLeek
+	{
+		Type				= Food,
+		DisplayName			= Jar of Leeks,
+		Icon				= JarWhite,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodLeeks_Ground,
+	}
+
+	item CannedRedRadish
+	{
+		Type				= Food,
+		DisplayName			= Jar of Red Radishes,
+		Icon				= JarBrown,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodRadish_Ground,
+	}
+
+	item CannedBellPepper
+	{
+		Type				= Food,
+		DisplayName			= Jar of Bell Peppers,
+		Icon				= JarBrown,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodBellPeppers_Ground,
+	}
+
+	item CannedCabbage
+	{
+		Type				= Food,
+		DisplayName			= Jar of Cabbage,
+		Icon				= JarGreen,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodCabbage_Ground,
+	}
+
+	item CannedBroccoli
+	{
+		Type				= Food,
+		DisplayName			= Jar of Broccoli,
+		Icon				= JarGreen,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodBroccoli_Ground,
+	}
+
+	item CannedApple
+	{
+		Type				= Food,
+		DisplayName			= Jar of Apples,
+		Icon				= CannedApple,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodTomatoes_Ground,
+	}
+
+	item CannedBanana
+	{
+		Type				= Food,
+		DisplayName			= Jar of Bananas,
+		Icon				= CannedBanana,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodPotatoes_Ground,
+	}
+
+	item CannedCorn
+	{
+		Type				= Food,
+		DisplayName			= Jar of Corn,
+		Icon				= CannedCorn,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodCabbage_Ground,
+	}
+
+	item CannedGrapes
+	{
+		Type				= Food,
+		DisplayName			= Jar of Grapes,
+		Icon				= CannedGrapes,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodRadish_Ground,
+	}
+	
+	item CannedLemon
+	{
+		Type				= Food,
+		DisplayName			= Jar of Lemons,
+		Icon				= CannedLemon,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodPotatoes_Ground,
+	}
+
+	item CannedLettuce
+	{
+		Type				= Food,
+		DisplayName			= Jar of Lettuce,
+		Icon				= CannedLettuce,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodCabbage_Ground,
+	}
+
+	item CannedOnion
+	{
+		Type				= Food,
+		DisplayName			= Jar of Onions,
+		Icon				= CannedOnion,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodPotatoes_Ground,
+	}
+
+	item CannedOrange
+	{
+		Type				= Food,
+		DisplayName			= Jar of Oranges,
+		Icon				= CannedOrange,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodCarrots_Ground,
+	}
+
+	item CannedPeach
+	{
+		Type				= Food,
+		DisplayName			= Jar of Peaches,
+		Icon				= CannedPeach,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodCabbage_Ground,
+	}
+
+	item CannedPineapple
+	{
+		Type				= Food,
+		DisplayName			= Jar of Pineapples,
+		Icon				= CannedPineapple,
+		Weight				= 0.5,
+		DaysFresh 			= 335,
+		DaysTotallyRotten 	= 365,
+		OnCooked			= CannedFood_OnCooked,
+		IsCookable			= TRUE,
+		MinutesToBurn		= 120,
+		MinutesToCook		= 60,
+		StaticModel 		= CanClosed,
+		WorldStaticModel 	= JarFoodPotatoes_Ground,
+	}
+
+    recipe Make Jar of Apple
+    {
+        EmptyJar,
+        JarLid,
+        Apple=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedApple,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Apple
+    {
+        CannedBroccoli,
+
+        Result:Apple=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Bananas
+    {
+        EmptyJar,
+        JarLid,
+        Banana=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedBanana,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Bananas
+    {
+        CannedBanana,
+
+        Result:Banana=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Corn
+    {
+        EmptyJar,
+        JarLid,
+        Corn=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedCorn,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Corn
+    {
+        CannedCorn,
+
+        Result:Corn=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	
+    recipe Make Jar of Grapes
+    {
+        EmptyJar,
+        JarLid,
+        Grapes=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedGrapes,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Grapes
+    {
+        CannedGrapes,
+
+        Result:Grapes=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Lemons
+    {
+        EmptyJar,
+        JarLid,
+        Lemon=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedLemon,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Lemon
+    {
+        CannedLemon,
+
+        Result:Lemon=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	
+    recipe Make Jar of Lettuce
+    {
+        EmptyJar,
+        JarLid,
+        Lettuce=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedLettuce,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Lettuce
+    {
+        CannedLettuce,
+
+        Result:Lettuce=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Onions
+    {
+        EmptyJar,
+        JarLid,
+        Onion=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedOnion,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Onions
+    {
+        CannedOnion,
+
+        Result:Onion=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Oranges
+    {
+        EmptyJar,
+        JarLid,
+        Orange=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedOrange,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Oranges
+    {
+        CannedOrange,
+
+        Result:Orange=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	
+    recipe Make Jar of Peaches
+    {
+        EmptyJar,
+        JarLid,
+        Peach=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedPeach,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Peaches
+    {
+        CannedPeach,
+
+        Result:Peach=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Pineapples
+    {
+        EmptyJar,
+        JarLid,
+        Pineapple=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedPineapple,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Pineapples
+    {
+        CannedPineapple,
+
+        Result:Pineapple=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+	recipe Make Box of Jars
+	{
+		EmptyJar=6,
+		JarLid=6,
+		
+		Result:BoxOfJars,
+		NeedToBeLearn:false,
+		Time:90.0,
+		Category:Storage,
+	}
+	
+	recipe Make 12-Pack Box of Jars
+	{
+		EmptyJar=12,
+		JarLid=12,
+		
+		Result:DozenJarsBox,
+		NeedToBeLearn:false,
+		Time:90.0,
+		Category:Storage,
+	}
+
+	recipe Open 12-Pack Box of Jars
+	{
+		destroy DozenJarsBox,
+		
+		Result:EmptyJar=12,
+		OnCreate:Give12JarLids_OnCreate,
+		NeedToBeLearn:false,
+		Time:90.0,
+		Category:Storage,
+	}
+
+    recipe Make Jar of Tomatoes
+    {
+        EmptyJar,
+        JarLid,
+        farming.Tomato=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedTomato,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Tomatoes
+    {
+        CannedTomato,
+
+        Result:farming.Tomato=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Carrots
+    {
+        EmptyJar,
+        JarLid,
+        Carrots=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedCarrots,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Carrots
+    {
+        CannedCarrots,
+
+        Result:Carrots=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Potatoes
+    {
+        EmptyJar,
+        JarLid,
+        farming.Potato=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedPotato,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Potatoes
+    {
+        CannedPotato,
+
+        Result:farming.Potato=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Eggplants
+    {
+        EmptyJar,
+        JarLid,
+        Eggplant=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedEggplant,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Eggplants
+    {
+        CannedEggplant,
+
+        Result:Eggplant=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Leeks
+    {
+        EmptyJar,
+        JarLid,
+        Leek=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedLeek,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Leeks
+    {
+        CannedLeek,
+
+        Result:Leek=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Red Radishes
+    {
+        EmptyJar,
+        JarLid,
+        farming.RedRadish=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedRedRadish,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Red Radishes
+    {
+        CannedRedRadish,
+
+        Result:farming.RedRadish=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Bell Peppers
+    {
+        EmptyJar,
+        JarLid,
+        BellPepper=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedBellPepper,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Bell Peppers
+    {
+        CannedBellPepper,
+
+        Result:BellPepper=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Cabbage
+    {
+        EmptyJar,
+        JarLid,
+        farming.Cabbage=3,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedCabbage,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Cabbage
+    {
+        CannedCabbage,
+
+        Result:farming.Cabbage=3,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Broccoli
+    {
+        EmptyJar,
+        JarLid,
+        Broccoli=5,
+        Water=5,
+        Vinegar=1,
+        Sugar=1,
+
+        Result:CannedBroccoli,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Open Jar of Broccoli
+    {
+        CannedBroccoli,
+
+        Result:Broccoli=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+		Override:true,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+
+
+}
+
